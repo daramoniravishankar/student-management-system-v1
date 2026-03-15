@@ -1,0 +1,163 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#667eea,#764ba2);
+min-height:100vh;
+}
+
+
+.app{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:30px;
+color:white;
+}
+
+
+/* Header */
+
+.header{
+text-align:center;
+margin-bottom:30px;
+}
+
+.header img{
+width:80px;
+margin-bottom:10px;
+}
+
+.header h1{
+font-size:32px;
+margin-bottom:5px;
+}
+
+.header p{
+opacity:0.8;
+}
+
+
+
+/* Form */
+
+.formCard{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
+padding:25px;
+border-radius:15px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+margin-bottom:30px;
+}
+
+.formCard input{
+
+padding:10px;
+border:none;
+border-radius:8px;
+width:200px;
+outline:none;
+}
+
+
+
+/* Buttons */
+
+button{
+border:none;
+padding:10px 15px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+.addBtn{
+background:#00e676;
+color:black;
+}
+
+.updateBtn{
+background:#ffca28;
+color:black;
+}
+
+.editBtn{
+background:#42a5f5;
+color:white;
+margin-right:5px;
+}
+
+.deleteBtn{
+background:#ef5350;
+color:white;
+}
+
+button:hover{
+transform:scale(1.05);
+opacity:0.9;
+}
+
+
+
+/* Table */
+
+.tableContainer{
+background:white;
+color:black;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+thead{
+background:linear-gradient(90deg,#667eea,#764ba2);
+color:white;
+}
+
+th,td{
+padding:12px;
+text-align:center;
+}
+
+tbody tr:nth-child(even){
+background:#f4f6ff;
+}
+
+tbody tr:hover{
+background:#e8eaf6;
+transition:0.3s;
+}
+
+
+
+/* Responsive */
+
+@media(max-width:700px){
+
+.formCard{
+flex-direction:column;
+align-items:center;
+}
+
+.formCard input{
+width:90%;
+}
+
+table{
+font-size:14px;
+}
+
+}
